@@ -4,7 +4,7 @@
 # PNGHide: PNG Data Hider & Revealer
 
 <p align="center">
-  <img src="./examples/image.jpeg" width="200" alt="PNGHide Logo">
+  <img src="./assets/image.jpeg" width="200" alt="PNGHide Logo">
 </p>
 
 
@@ -79,6 +79,13 @@ python main.py extract --input input_image.png --output extracted_data
 1. Execute the `gui.py` script:
 2. Click on the "Embed Data" button to hide data within a PNG file or the "Extract Data" button to reveal hidden data.
 3. Follow the intuitive prompts in the GUI to select input and output files and specify the type of data you're hiding (for embedding).
+
+
+
+<div style="display: flex;">
+    <img src="./assets/PNGHide 1.png" alt="First Image" style="max-width: 45%; height: auto; padding: 10px;">
+    <img src="./assets/PNGHide 2.png" alt="Second Image" style="max-width: 45%; height: auto; padding: 10px;">
+</div>
 
 
 
