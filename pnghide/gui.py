@@ -6,37 +6,22 @@ from main import embed, extract
 
 
 def embed_gui(root):
-    input_file = filedialog.askopenfilename(title="Select input PNG file")
-    output_file = filedialog.asksaveasfilename(title="Select output PNG file", defaultextension=".png")
+    input_file = filedialog.askopenfilename(title="Select input PNG file", filetypes=[("PNG files", "*.png")])
+    output_file = filedialog.asksaveasfilename(title="Select output PNG file", defaultextension=".png", filetypes=[("PNG files", "*.png")])
     
     if input_file and output_file:
-        data_type_window = tk.Toplevel(root)
-        data_type_window.title("Data Type")
+        file_to_embed = filedialog.askopenfilename(title="Select file to embed", defaultextension=[("PNG files", "*.png"), ("Text files", "*.txt")])
         
-        data_label = tk.Label(data_type_window, text="Enter 'image' or 'text' for the data to embed:")
-        data_label.pack()
-        
-        data_entry = tk.Entry(data_type_window)
-        data_entry.pack()
-        
-        confirm_button = tk.Button(data_type_window, text="Confirm", command=lambda: embed_with_data_type(root, input_file, output_file, data_entry.get(), data_type_window))
-        confirm_button.pack()
-
-
-def embed_with_data_type(root, input_file, output_file, data_type, window):
-    window.destroy()
-    file_to_embed = filedialog.askopenfilename(title="Select file to embed")
-
-    if file_to_embed:
-        try:
-            embed(input_file, output_file, file_to_embed)
-            messagebox.showinfo("Embedding Successful", "Data embedded successfully!")
-        except Exception as e:
-            messagebox.showerror("Error", str(e))
+        if file_to_embed:
+            try:
+                embed(input_file, output_file, file_to_embed)
+                messagebox.showinfo("Embedding Successful", "Data embedded successfully!")
+            except Exception as e:
+                messagebox.showerror("Error", str(e))
 
 
 def extract_gui():
-    input_file = filedialog.askopenfilename(title="Select input PNG file")
+    input_file = filedialog.askopenfilename(title="Select input PNG file", filetypes=[("PNG files", "*.png")])
     output_file = filedialog.asksaveasfilename(title="Select output file", defaultextension=".txt")
 
     if input_file and output_file:
