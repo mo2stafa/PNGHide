@@ -39,13 +39,13 @@ pip install -r requirements.txt
 Embedding an image file into a PNG file:
 
 ```bash
-python main.py embed --input input_image.png --output output_image.png --file data_to_hide.png image
+python main.py embed --input input_image.png --output output_image.png --file data_to_hide.png
 ```
 
 Embedding a text file into a PNG file:
 
 ```bash
-python main.py embed --input input_image.png --output output_image.png --file data_to_hide.txt text
+python main.py embed --input input_image.png --output output_image.png --file data_to_hide.txt
 ```
 
 

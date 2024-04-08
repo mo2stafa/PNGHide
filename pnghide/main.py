@@ -196,7 +196,6 @@ def main():
 
     if args.operation == 'embed':
         embed_parser = argparse.ArgumentParser(description="Embed data into the PNG file.")
-        embed_parser.add_argument('data_type', type=str, choices=['image', 'text'], help="Choose 'image' or 'text' to embed")
         embed_parser.add_argument('--file', type=str, required=True, help="Path to the image or text file to embed")
         embed_args = embed_parser.parse_args(extra_args)
 
