@@ -3,6 +3,11 @@
 
 # PNGHide: PNG Data Hider & Revealer
 
+<p align="center">
+  <img src="./examples/image.jpeg" width="200" alt="PNGHide Logo">
+</p>
+
+
 PNGHide is a simple tool designed for hiding and extracting data within PNG files securely and effortlessly using Python.
 
 ## Features
@@ -27,6 +32,18 @@ PNGHide is a simple tool designed for hiding and extracting data within PNG file
 ```bash
 pip install -r requirements.txt
 ```
+
+
+## Setup
+
+Before using PNGHide, you need to specify the encryption key directly in the `main.py` script.
+
+### Setting Encryption Key
+
+1. Open the `main.py` file in a text editor.
+2. Locate the `KEY` variable in the script.
+3. Replace the current value of the `KEY` variable with your desired encryption key.
+
 
 
 ## Usage
