@@ -82,10 +82,14 @@ python main.py extract --input input_image.png --output extracted_data
 
 
 
-<div style="display: flex;">
-    <img src="./assets/PNGHide 1.png" alt="First Image" style="max-width: 45%; height: auto; padding: 10px;">
-    <img src="./assets/PNGHide 2.png" alt="Second Image" style="max-width: 45%; height: auto; padding: 10px;">
-</div>
+<p align="center">
+  <table>
+  <tr>
+    <td> <img src="./assets/PNGHide 1.png" alt="First Image" width="400" /> </td>
+    <td> <img src="./assets/PNGHide 2.png" alt="Second Image" width="400" /> </td>
+  </tr>
+  </table>
+</p>
 
 
 
