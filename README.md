@@ -10,6 +10,13 @@
 
 PNGHide is a simple tool designed for hiding and extracting data within PNG files securely and effortlessly using Python.
 
+## System Architecture
+
+<p align="center">
+  <img src="./assets/architecture.png" alt="System Architecture" width="500" />
+</p>
+
+
 ## Features
 
 - **Data Hiding**: Embed images or text into PNG files, concealing sensitive information within innocuous images.
